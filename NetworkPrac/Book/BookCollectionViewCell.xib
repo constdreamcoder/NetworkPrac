@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BookCollectionViewCell" id="gTV-IL-0wX" customClass="BookCollectionViewCell" customModule="NetworkPrac" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.trianglebadge.exclamationmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Uyv-dg-n72">
+                        <rect key="frame" x="137.66666666666663" y="103" width="149.33333333333337" height="198"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Uyv-dg-n72" secondAttribute="height" multiplier="3:4" id="7bK-P7-krE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사랑해 사랑해 사랑해(출간 15주년 기념판)ㅁㄴㅇㄹㅁㄴㅇㄹㅁㄴㅇㄹㅁㄴㅇㄹㅁㄴㅇ" lineBreakMode="characterWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgV-zj-CLu">
+                        <rect key="frame" x="8" y="8" width="284" height="40.666666666666664"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" systemColor="systemYellowColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BgV-zj-CLu" secondAttribute="trailing" constant="8" id="62S-f3-EKk"/>
+                <constraint firstItem="Uyv-dg-n72" firstAttribute="top" relation="greaterThanOrEqual" secondItem="BgV-zj-CLu" secondAttribute="bottom" constant="8" id="AG1-FW-XOB"/>
+                <constraint firstAttribute="trailing" secondItem="Uyv-dg-n72" secondAttribute="trailing" constant="16" id="DOl-RO-lhP"/>
+                <constraint firstAttribute="bottom" secondItem="Uyv-dg-n72" secondAttribute="bottom" id="ZYn-jv-hNf"/>
+                <constraint firstItem="Uyv-dg-n72" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.65" id="ehh-Ux-pNQ"/>
+                <constraint firstItem="BgV-zj-CLu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="ioo-m2-cte"/>
+                <constraint firstItem="BgV-zj-CLu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="xLX-qT-NAB"/>
+            </constraints>
+            <size key="customSize" width="301" height="285"/>
+            <connections>
+                <outlet property="thumnailImageView" destination="Uyv-dg-n72" id="PwI-T1-YJ1"/>
+                <outlet property="titleLabel" destination="BgV-zj-CLu" id="Jg9-WL-1tQ"/>
+            </connections>
+            <point key="canvasLocation" x="149.61832061068702" y="69.718309859154928"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="square.and.arrow.up.trianglebadge.exclamationmark" catalog="system" width="120" height="128"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
